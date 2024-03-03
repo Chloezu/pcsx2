@@ -1821,6 +1821,7 @@ void GSDeviceMTL::MRESetHWPipelineState(GSHWDrawConfig::VSSelector vssel, GSHWDr
 		setFnConstantB(m_fn_constants, pssel.a_masked,           GSMTLConstantIndex_PS_A_MASKED);
 		setFnConstantB(m_fn_constants, pssel.hdr,                GSMTLConstantIndex_PS_HDR);
 		setFnConstantB(m_fn_constants, pssel.rta_correction,     GSMTLConstantIndex_PS_RTA_CORRECTION);
+		setFnConstantB(m_fn_constants, pssel.rta_source_correction, GSMTLConstantIndex_PS_RTA_SRC_CORRECTION);
 		setFnConstantB(m_fn_constants, pssel.colclip,            GSMTLConstantIndex_PS_COLCLIP);
 		setFnConstantI(m_fn_constants, pssel.blend_mix,          GSMTLConstantIndex_PS_BLEND_MIX);
 		setFnConstantB(m_fn_constants, pssel.round_inv,          GSMTLConstantIndex_PS_ROUND_INV);
